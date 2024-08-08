@@ -7,6 +7,7 @@
         <DebugType>none</DebugType>
         <GenerateDependencyFile>false</GenerateDependencyFile>
         <OutputType>Library</OutputType>
+        <OutDir>$(APPDATA)\FlowLauncher\Plugins\RiderWorkFlow\</OutDir>
     </PropertyGroup>
 
 

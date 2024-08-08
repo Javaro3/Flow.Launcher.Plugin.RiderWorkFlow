@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0-windows</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <DebugType>none</DebugType>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+        <OutputType>Library</OutputType>
+        <OutDir>$(APPDATA)\FlowLauncher\Plugins\RiderWorkFlow\</OutDir>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <Content Include="plugin.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <Content Include="Images\**\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Flow.Launcher.Plugin" Version="4.3.0" />
+    </ItemGroup>
+
+</Project>

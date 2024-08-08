@@ -27,9 +27,9 @@ jobs:
           ac $env:GITHUB_OUTPUT "version=$version"
       - name: Build
         run: |
-          dotnet publish -c Release
+          dotnet publish 'RiderWorkFlow.csproj' -o "RiderWorkFlow"
           7z a -tzip "RiderWorkFlow.zip" "RiderWorkFlow/*"
-          rm -r "RiderWorkFlow.zip"
+          rm -r "RiderWorkFlow"
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:

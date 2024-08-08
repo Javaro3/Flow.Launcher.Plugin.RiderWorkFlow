@@ -4,6 +4,9 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+  
 jobs:
   build:
 
@@ -28,7 +31,7 @@ jobs:
     - name: Dotnet Publish
       run: |
         dotnet publish 'RiderWorkFlow.csproj' -c Release -o "RiderWorkFlow"
-        7z a -tzip "RiderWorkFlow.zip" "/*"
+        7z a -tzip "RiderWorkFlow.zip" "RiderWorkFlow/*"
         rm -r "RiderWorkFlow"
     - name: Create Release
       uses: softprops/action-gh-release@v1

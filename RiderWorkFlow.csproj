@@ -5,6 +5,8 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <DebugType>none</DebugType>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
         <GenerateDependencyFile>false</GenerateDependencyFile>
         <OutputType>Library</OutputType>
         <OutDir>$(APPDATA)\FlowLauncher\Plugins\RiderWorkFlow\</OutDir>

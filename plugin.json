@@ -7,8 +7,6 @@
     "Version": "1.0.0",
     "Language": "csharp",
     "Website": "https://github.com/Javaro3/Flow.Launcher.Plugin.RiderWorkFlow",
-    "UrlDownload": "URL to download",
-    "UrlSourceCode": "https://github.com/Javaro3/Flow.Launcher.Plugin.RiderWorkFlow",
     "IcoPath": "Images/Icon.png",
     "ExecuteFileName": "RiderWorkFlow.dll"
 }

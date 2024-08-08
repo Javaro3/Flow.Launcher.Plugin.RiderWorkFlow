@@ -28,7 +28,8 @@ jobs:
       - name: Build
         run: |
           dotnet publish -c Release
-          7z a RiderWorkFlow.zip
+          7z a -tzip "RiderWorkFlow.zip" "RiderWorkFlow/*"
+          rm -r "RiderWorkFlow.zip"
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:

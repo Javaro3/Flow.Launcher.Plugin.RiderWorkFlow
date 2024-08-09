@@ -2,8 +2,11 @@ name: Publish Release
 
 on:
   push:
-    branches: [ master ]
-  workflow_dispatch:
+    paths-ignore:
+      - README.md
+      - .gitignore
+    branches:
+      - main
 
 permissions:
   contents: write
